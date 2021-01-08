@@ -16,9 +16,10 @@ public class Teste {
 
 			ArrayList<Contribuinte> contribuintes = new ArrayList<Contribuinte>();
 
-			System.out.println("Iniciando o cadastro de pessoas jur�dicas:");
+		        System.out.println("Quantas pessoas jurídicas irá cadastrar?");
+			int N = sc.nextInt();
 
-			for (int i = 0; i < 2; i++) {
+			for (int i = 0; i < N; i++) {
 
 				PessoaJuridica p = new PessoaJuridica();
 
@@ -40,9 +41,10 @@ public class Teste {
 
 			}
 
-			System.out.println("Iniciando cadastro de pessoas f�sicas:");
+			System.out.println("Quantas pessoas físicas irá cadastrar?");
+			int M = sc.nextInt();
 
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < M; i++) {
 
 				PessoaFisica pf = new PessoaFisica();
 
