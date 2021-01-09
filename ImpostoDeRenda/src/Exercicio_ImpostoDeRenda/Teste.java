@@ -9,10 +9,12 @@ import java.util.Scanner;
 public class Teste {
 
 	public static void main(String[] args) {
+		
+			Scanner sc = new Scanner(System.in);
 
 		try {
 
-			Scanner sc = new Scanner(System.in);
+		
 
 			ArrayList<Contribuinte> contribuintes = new ArrayList<Contribuinte>();
 
@@ -24,14 +26,14 @@ public class Teste {
 				PessoaJuridica p = new PessoaJuridica();
 
 				System.out.println("Nome:");
-				String nome = sc.nextLine();
+				String nome = sc.next();
 
 				System.out.println("Renda bruta:");
 				double rendaBruta = sc.nextDouble();
-				sc.nextLine();
+				
 
 				System.out.println("CNPJ:");
-				String cnpj = sc.nextLine();
+				String cnpj = sc.next();
 
 				p.setNome(nome);
 				p.setRendaBruta(rendaBruta);
@@ -49,15 +51,15 @@ public class Teste {
 				PessoaFisica pf = new PessoaFisica();
 
 				System.out.println("Nome: ");
-				pf.setNome(sc.nextLine());
+				pf.setNome(sc.next());
 
 				System.out.println("Renda Bruta: ");
 
 				pf.setRendaBruta(sc.nextDouble());
 
-				sc.nextLine(); // Limpeza do buffer //
+				
 				System.out.println("CPF: ");
-				pf.setCpf(sc.nextLine());
+				pf.setCpf(sc.next());
 
 				contribuintes.add(pf);
 			}
@@ -71,5 +73,6 @@ public class Teste {
 			e.printStackTrace();
 			System.out.println("Erro ao processar cadastro");
 		}
+		sc.close();
 	}
 }
