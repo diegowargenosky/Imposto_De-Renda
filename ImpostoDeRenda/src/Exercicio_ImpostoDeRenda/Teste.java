@@ -26,7 +26,8 @@ public class Teste {
 				PessoaJuridica p = new PessoaJuridica();
 
 				System.out.println("Nome:");
-				String nome = sc.next();
+				sc.nextLine();
+				String nome = sc.nextLine();
 
 				System.out.println("Renda bruta:");
 				double rendaBruta = sc.nextDouble();
@@ -51,7 +52,8 @@ public class Teste {
 				PessoaFisica pf = new PessoaFisica();
 
 				System.out.println("Nome: ");
-				pf.setNome(sc.next());
+				sc.nextLine();
+				pf.setNome(sc.nextLine());
 
 				System.out.println("Renda Bruta: ");
 
@@ -59,7 +61,8 @@ public class Teste {
 
 				
 				System.out.println("CPF: ");
-				pf.setCpf(sc.next());
+				sc.nextLine();
+				pf.setCpf(sc.nextLine());
 
 				contribuintes.add(pf);
 			}
