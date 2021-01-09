@@ -34,7 +34,7 @@ public class Teste {
 				
 
 				System.out.println("CNPJ:");
-				String cnpj = sc.next();
+				String cnpj = sc.nextLine();
 
 				p.setNome(nome);
 				p.setRendaBruta(rendaBruta);
