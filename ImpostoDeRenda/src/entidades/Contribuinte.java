@@ -1,4 +1,4 @@
-package Exercicio_ImpostoDeRenda;
+package entidades;
 
 public abstract  class Contribuinte {
 	

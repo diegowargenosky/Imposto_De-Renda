@@ -1,10 +1,14 @@
 
-package Exercicio_ImpostoDeRenda;
+package programaTeste;
 
 import java.util.List;
 import java.util.ArrayList;
 
 import java.util.Scanner;
+
+import entidades.Contribuinte;
+import entidades.PessoaFisica;
+import entidades.PessoaJuridica;
 
 public class Teste {
 

@@ -1,4 +1,4 @@
-package Exercicio_ImpostoDeRenda;
+package entidades;
 
 public class PessoaFisica extends Contribuinte {
 
@@ -48,7 +48,7 @@ public class PessoaFisica extends Contribuinte {
 
 	public String toString() {
 
-		String s = "Pessoa física[";
+		String s = "Pessoa fï¿½sica[";
 		s += super.toString();
 		s += " ;cpf: "+cpf;
 		s += " ;Imposto a ser pago: " + calculoImposto()+"]";
