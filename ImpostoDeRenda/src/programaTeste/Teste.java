@@ -28,23 +28,26 @@ public class Teste {
 			for (int i = 0; i < N; i++) {
 
 				PessoaJuridica p = new PessoaJuridica();
-
+	
 				System.out.println("Nome:");
 				sc.nextLine();
+				
 				String nome = sc.nextLine();
+				
+	                        System.out.println("CNPJ:");
+				
+				String cnpj = sc.nextLine();
 
 				System.out.println("Renda bruta:");
 				double rendaBruta = sc.nextDouble();
-				
-
-				System.out.println("CNPJ:");
-				String cnpj = sc.nextLine();
+			
 
 				p.setNome(nome);
 				p.setRendaBruta(rendaBruta);
 				p.setCnpj(cnpj);
 
 				contribuintes.add(p);
+				
 
 			}
 
@@ -53,20 +56,25 @@ public class Teste {
 
 			for (int i = 0; i < M; i++) {
 
-				PessoaFisica pf = new PessoaFisica();
+		         PessoaFisica pf = new PessoaFisica();
 
 				System.out.println("Nome: ");
 				sc.nextLine();
-				pf.setNome(sc.nextLine());
+				String nome = sc.nextLine();
+				
+				System.out.println("CPF: ");
+				String cpf = sc.nextLine();
 
 				System.out.println("Renda Bruta: ");
 
-				pf.setRendaBruta(sc.nextDouble());
+				double rendaBruta = sc.nextDouble();
+				
+				pf.setNome(nome);
+				pf.setCpf(cpf);
+				pf.setRendaBruta(rendaBruta);
 
 				
-				System.out.println("CPF: ");
-				sc.nextLine();
-				pf.setCpf(sc.nextLine());
+			
 
 				contribuintes.add(pf);
 			}
